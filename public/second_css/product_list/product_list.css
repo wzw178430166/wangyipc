@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #F5F5F5; }
+
+.nav_div {
+  clear: both;
+  width: 1090px;
+  height: 50px;
+  margin: 0 auto;
+  line-height: 50px; }
+  .nav_div ul {
+    list-style: none; }
+    .nav_div ul li {
+      float: left;
+      margin-right: 10px; }
+
+#content {
+  height: 310px;
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+  width: 1090px;
+  margin: 0 auto; }
+  #content:hover div {
+    display: block; }
+
+#content #ul-imgs {
+  width: 700%;
+  height: 310px;
+  list-style: none; }
+
+#content #ul-imgs li {
+  float: left;
+  height: 310px; }
+
+#content > div {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 110px;
+  border-radius: 50%;
+  display: block;
+  transition: all .5s; }
+
+#content .arrow_left {
+  left: 0px;
+  background: #D0C4AF url(../../message/afddf.png) 3px -4870px !important; }
+  #content .arrow_left:hover {
+    background: #b4a078 url(../../message/afddf.png) 3px -4870px !important; }
+
+#content .arrow_right {
+  right: 0px;
+  background: #D0C4AF url(../../message/afddf.png) 0px -5244px !important; }
+  #content .arrow_right:hover {
+    background: #b4a078 url(../../message/afddf.png) 0px -5244px !important; }
+
+#content .round {
+  position: absolute;
+  bottom: 20px;
+  list-style: none;
+  left: 50%;
+  transform: translate(-50%, 0); }
+
+#content .round > li {
+  float: left;
+  width: 7px;
+  height: 7px;
+  background: white;
+  border-radius: 50%;
+  margin-right: 15px; }
+
+#content .round .active {
+  background: #6B6B6B;
+  border: 5px solid #b4a078;
+  transform: translateY(-5px); }
+
+#content .transition {
+  transition: all .5s; }
+
+.nav_lists {
+  width: 1090px;
+  margin: 0 auto;
+  position: relative;
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 70px; }
+  .nav_lists .nav-headers {
+    width: 1010px;
+    margin: 0 auto;
+    height: 250px; }
+    .nav_lists .nav-headers li {
+      width: 1010px;
+      float: left; }
+      .nav_lists .nav-headers li span {
+        font-size: 14px;
+        color: #999;
+        float: left;
+        margin: 10px 30px 10px 0;
+        width: 70px; }
+      .nav_lists .nav-headers li .nav_daohans {
+        width: 900px;
+        float: left; }
+        .nav_lists .nav-headers li .nav_daohans .nav_active {
+          color: #b4a078; }
+        .nav_lists .nav-headers li .nav_daohans a {
+          display: inline-block;
+          font-size: 14px;
+          color: #333;
+          margin: 10px 30px 10px 0; }
+          .nav_lists .nav-headers li .nav_daohans a:hover {
+            color: #b4a078; }
+    .nav_lists .nav-headers li:not(:last-child) {
+      border-bottom: 1px dashed  #dedede; }
+    .nav_lists .nav-headers li:last-child {
+      border-bottom: 1px solid #dedede; }
+  .nav_lists .product-list {
+    width: 1010px;
+    margin: 0 auto; }
+    .nav_lists .product-list .prList_h {
+      text-align: center;
+      margin-bottom: 15px; }
+    .nav_lists .product-list .prList_p {
+      text-align: center;
+      margin-bottom: 35px; }
+    .nav_lists .product-list .prList_div {
+      width: 100%;
+      display: flex;
+      flex-wrap: row-reverse;
+      flex-wrap: wrap; }
+      .nav_lists .product-list .prList_div div {
+        width: 245px;
+        height: 382px;
+        box-sizing: border-box;
+        overflow: hidden;
+        transition: all .5s;
+        margin-bottom: 40px;
+        margin-right: 7px; }
+        .nav_lists .product-list .prList_div div p:not(:first-child) {
+          text-align: center;
+          margin: 10px 0; }
+        .nav_lists .product-list .prList_div div p:nth-child(1) > a {
+          width: 245px;
+          height: 245px;
+          display: inline-block; }
+        .nav_lists .product-list .prList_div div p:nth-child(2) > span {
+          color: white;
+          padding: 5px;
+          background: #e36844; }
+        .nav_lists .product-list .prList_div div p:nth-child(3) > a {
+          color: #000;
+          font-size: 15px;
+          font-weight: 700; }
+          .nav_lists .product-list .prList_div div p:nth-child(3) > a:hover {
+            color: #b4a078; }
+        .nav_lists .product-list .prList_div div p:nth-child(4) span {
+          color: #d4282d;
+          font-size: 14px;
+          margin-right: 7px; }
+        .nav_lists .product-list .prList_div div p:nth-child(4) s {
+          color: #999; }
+        .nav_lists .product-list .prList_div div p:last-child {
+          color: #999;
+          font-size: 15px; }
+        .nav_lists .product-list .prList_div div:hover {
+          box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+          background: #f4f4f4; }

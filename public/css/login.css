@@ -1,0 +1,119 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+	}
+	a {
+	text-decoration: none;
+}
+  i{font-style: normal;}
+	body{
+	  background:#EFEFEF;	
+		}
+    
+	#login_content{
+	width: 1000px;
+	/* [disabled]height: 920px; */
+	background: #FFFFFF;
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+		}
+#login_head {
+	height: 110px;
+	width: 1000px;
+	margin: 0 auto;
+	background-image: url(../message/sprite.png);
+	background-position: -50px 20px;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#login_head span {
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	font-size: 18px;
+	color: #666;
+}
+#login_head span a {
+	color: #CA5252;
+}
+#login_head span a:hover {
+	color: #C00;
+}
+#login_content table tr td {
+	/*height: 47px;*/
+	width: 338px;
+	vertical-align: middle;
+	text-align: right;
+}
+#login_content table tr td #btn1 {
+	color: #FFF;
+	background-color: #CA5252;
+	height: 40px;
+	width: 162px;
+	font-size: 16px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#login_content table tr td #btn2 {
+	color: #333;
+	background-color: #FFFFFF;
+	height: 40px;
+	width: 162px;
+	font-size: 16px;
+	border: 1px solid #999;
+}
+#login_content table tr td input {
+	height: 45px;
+	width: 325px;
+	border: 1px solid #999;
+	float: left;
+	text-indent: 5px;
+	font-size: 16px;
+	color: #999;
+}
+#login_content table tr td #logins {
+	background-color: #CA5252;
+	color: #FFF;
+	font-size: 18px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+/* 验证信息 正则*/
+#login_content .table_ex{
+	vertical-align: middle;
+	text-align: left;
+	text-indent:20px;
+	color:#C81623;
+}
+#login_content .tab_tnb{
+	width:120px;
+	height:45px;
+	background-image: linear-gradient(to left , #89C2CD,#008397);
+	color:white;
+	font-size:14px;
+	border:none;
+	outline:none;
+	border-radius:5px;
+}
+  /*验证码*/
+#login_content .t_security{
+	display: inline-block;
+	width:150px;
+	height: 45px;
+	background:linear-gradient(to left,red 0%, #27ff3b 50%,yellow 100%);
+	float: left;
+	font-size:18px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 45px;
+	letter-spacing:10px;
+	font-style:italic;
+	
+}

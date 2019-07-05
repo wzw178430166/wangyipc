@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商品详情</title>
+<script src="lib/jquery.min.js"></script>
+<link rel="stylesheet" href="./second_css/product/product.css">
+</head>
+
+<body>
+<header>
+</header>
+<div class="nav_index">
+    <ul>
+        <li>首页</li>
+        <li>></li>
+        <li><a href="#">居家生活</a></li>
+        <li>></li>
+        <li><a href="#">床垫床褥</a></li>
+        <li>></li>
+        <li>提花冰丝席三件套 可折叠凉席</li>
+    </ul>
+</div>
+<div id="conter">
+     <!-- 左边放大镜效果图片 -->
+  <div class="conter_left">
+     <!-- 中图 -->
+    <img src="./message/nav3/md/md1.jpg" alt="" id="ming"/>
+     <!-- 遮罩层 -->
+     <div id="mask" class="dnone"></div>
+     <div id="super-mask"></div>
+     <div id="div-lg" class="dnones"></div>
+     <!-- 图片下的导航条 -->
+   <div class="conter_list">
+     <div class="list_left" id="btn-left"><img src="./message/nav3/hover-prev.png" alt=""></div>
+     <div class="list_center">
+       <ul id="#ul-imgs">
+         <!-- <li><img src="./message/nav3/sm/sm1.png" alt=""></li>
+         <li><img src="./message/nav3/sm/sm1.png" alt=""></li>
+         <li><img src="./message/nav3/sm/sm1.png" alt=""></li>
+         <li><img src="./message/nav3/sm/sm1.png" alt=""></li>
+         <li><img src="./message/nav3/sm/sm1.png" alt=""></li> -->
+       </ul>
+     </div>
+     <div class="list_right" id="btn-right"><img src="./message/nav3/hover-next.png" alt=""></div>
+   </div>
+   <span class="conter_bottom">企业采购更优惠 ></span>
+  </div>
+    <!-- 右边商品详情 -->
+    <div class="conter_details" id="app">
+      <p><span v-text="products.title"></span><span>99.3%</span></p>
+      <p><span v-text="products.subtitle"></span><span>好评率 ></span></p>
+      <p><span>网易员工精选</span>  <span>距优惠结束</span><span>5天10时45分</span></p>
+      <div class="conter-location">
+        <div><span>活动价</span><span>¥{{products.price}}</span><span><s>¥{{products.spec}}</s></span></div>
+        <div><span>购物返</span><span>新用户最高返</span><span>¥1.59回馈金 + 15积分</span></div>
+        <div><span>限制</span><span>特价商品不可与优惠券叠加使用</span></div>
+        <div><span>配送</span><span>至</span><div class="conter_div">
+         <select id="">
+           <option value="">天津市河西区挂甲寺街道</option>
+           <option value="">天津市河西区挂甲寺街道</option>
+         </select>
+        </div><span>支持配送</span>
+        </div>
+        <div><span>服务</span>
+          <a href="">
+            <!-- <span>･</span><span>支持30天无忧退换货</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>･</span><span>48小时快速退款</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>･</span><span>网易自营品牌</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
+            {{products.promise}}
+          </a>
+        </div>
+      </div>
+      <!-- 结束商品地址 -->
+       
+      <!-- 开始规格 -->
+      <div id="specst">
+        <div class="specst_img">
+          <span>颜色</span>
+          <ul>
+          <li class="specst_active"><img src="./message/nav3/small/small1.png" alt=""></li>
+          <li><img src="./message/nav3/small/small1.png" alt=""></li>
+          <li><img src="./message/nav3/small/small1.png" alt=""></li>
+        </ul>
+        </div>
+        <div class="specst_size">
+          <span>尺寸</span>
+          <span>1.5m</span>
+          <span class="size_active">1.8m</span>
+        </div>
+        <div class="specst_num">
+          <span>数量</span>
+          <div class="specst_input"><span>-</span><input type="text" size="5" value="1"><span>+</span></div>
+        </div>
+        <div class="specst_button">
+         <a href="shopping.html">立即购买</a><a href="#">加入购物车</a><div>收藏</div>
+        </div>
+      </div>
+      <!-- 结束规格 -->
+      </div>
+    </div>
+    <!-- 结束商品详情 -->
+</div>
+
+<div class="footer_div">
+<footer></footer>
+</div>
+</body>
+<script src="lib/vue.js"></script>
+<script src="js/product/product.js"></script>
+</html>

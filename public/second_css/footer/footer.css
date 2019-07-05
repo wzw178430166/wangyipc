@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body, button, code, input, select, textarea {
+  font: 12px/1.5 "Microsoft Yahei"; }
+
+a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 12px; }
+
+i {
+  font-style: initial; }
+
+ul {
+  list-style: none; }
+
+@media screen and (max-width: 767px) {
+  body:after {
+    content: "";
+    width: 1090px;
+    height: 5px;
+    background: #414141;
+    display: block; } }
+
+@media screen and (min-width: 768px) and (max-width: 1090px) {
+  body:after {
+    content: "";
+    width: 1090px;
+    height: 5px;
+    background: #414141;
+    display: block; } }
+
+@media screen and (min-width: 1090px) {
+  body:after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #414141;
+    display: block; } }
+
+.outbgcolor {
+  background: #414141;
+  width: 100%; }
+
+#footer {
+  width: 1090px;
+  height: 250px;
+  background: #414141;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.my_footer {
+  width: 100%;
+  height: 550px;
+  background: #414141; }
+
+@media screen and (max-width: 767px) {
+  .my_footer {
+    height: 550px; }
+  .footer_div {
+    width: 1090px;
+    background: #414141; } }
+
+@media screen and (min-width: 768px) and (max-width: 1090px) {
+  .my_footer {
+    height: 550px; }
+  .footer_div {
+    width: 1090px;
+    background: #414141; } }
+
+@media screen and (min-width: 1090px) {
+  .footer_div {
+    height: 550px;
+    background: #414141; } }
+
+#footer .footer_conter {
+  height: 250px;
+  width: 1088px;
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  background: #414141; }
+
+#footer .footer_conter .footer_icon {
+  height: 80px;
+  width: 1088px;
+  padding-bottom: 35px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #666;
+  position: absolute;
+  top: -20px; }
+
+#footer .footer_conter .footer_icon ul {
+  height: 120px;
+  width: 100%; }
+
+#footer .footer_conter .footer_icon ul li {
+  float: left;
+  height: 120px;
+  line-height: 120px;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 70px;
+  position: relative; }
+
+#footer .footer_conter .footer_icon ul li i {
+  height: 52px;
+  width: 50px;
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  top: 35px; }
+
+#footer .footer_conter .footer_icon ul li span {
+  padding-right: 10px;
+  padding-left: 65px;
+  display: inline-block; }
+
+#footer .footer_conter .footer_icon ul li .footer_icon1 {
+  background-image: url(../../message/f1f2d4.png);
+  background-position: 0px -134px; }
+
+#footer .footer_conter .footer_icon ul li .footer_icon2 {
+  background-image: url(../../message/f1f2d4.png);
+  background-position: 0px -367px; }
+
+#footer .footer_conter .footer_icon ul li .footer_icon3 {
+  background-image: url(../../message/f1f2d4.png);
+  background-position: 0px 0px; }
+
+#footer .footer_conter .footer_icon ul li .footer_icon4 {
+  background-image: url(../../message/f1f2d4.png);
+  background-position: 0px -194px; }
+
+#footer .footer_conter .footer_ul1 {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  position: relative;
+  clear: both;
+  width: 65%;
+  top: 137px; }
+
+#footer .footer_conter .footer_ul2 {
+  height: 30px;
+  clear: both;
+  position: relative;
+  top: 150px; }
+
+#footer .footer_conter .footer_ul2 li {
+  margin-right: 8px;
+  margin-left: 8px;
+  float: left;
+  line-height: 30px;
+  color: #999; }
+
+#footer .footer_conter .footer_ul2 li a {
+  color: #999; }
+
+#footer .footer_conter .footer_ul2 li a:hover {
+  color: #FFF; }
+
+#footer .footer_conter .footer_ul1 li {
+  float: left; }
+
+#footer .footer_conter .footer_ul1 li a {
+  color: #999;
+  margin-right: 12px;
+  margin-left: 12px; }
+
+#footer .footer_conter .footer_ul1 li a:hover {
+  color: #FFF; }
+
+#footer .footer_conter .footer_ul1 .footer_int {
+  background-color: #999;
+  height: 15px;
+  width: 2px; }
+
+#footer .footer_conter .footer_p1 {
+  line-height: 30px;
+  text-align: center;
+  height: 30px;
+  width: 330px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px; }
+
+#footer .footer_conter .footer_p1 a {
+  color: #999; }
+
+#footer .footer_conter .footer_p1 a:hover {
+  color: #FFF; }
+
+#footer .footer_conter .footer_p1 i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  background-image: url(../../message/f5d1fe555.gif);
+  background-size: cover; }
+
+.out_ser {
+  width: 100%;
+  background: white;
+  padding-top: 40px; }
+
+.services {
+  height: 300px;
+  width: 1088px;
+  position: relative;
+  top: 0px;
+  clear: both;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  background: white; }
+
+.services .services_ul .services_one .services_span1:hover {
+  color: #b4a078; }
+
+.services .services_ul {
+  height: 300px;
+  width: 1088px; }
+
+.services .services_ul li {
+  /* [disabled]background-color: #C60; */
+  float: left;
+  height: 300px;
+  width: 362px;
+  position: relative; }
+
+.services .services_ul .services_one .services_span1 {
+  display: block;
+  height: 100px;
+  width: 81px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  border: 1px solid #E8E8E8;
+  border-radius: 2px; }
+
+.services .services_ul .services_one .services_span1:hover i {
+  background-image: url(../../message/f1f2d4.png);
+  background-position: 0px -254px; }
+
+.services .services_ul .services_one p {
+  text-align: center;
+  font-size: 18px; }
+
+.services .services_ul .services_one .services_span1 i {
+  display: block;
+  height: 27px;
+  width: 31px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  position: relative;
+  top: 35px;
+  background-position: 0px -290px;
+  background-image: url(../../message/f1f2d4.png); }
+
+.services .services_ul .services_one .services_span2:hover {
+  color: #b4a078; }
+
+.services .services_ul .services_one .services_span2:hover i {
+  background-image: url(../../message/f1f2d4.png);
+  background-position: 0px -61px; }
+
+.services .services_ul .services_one .services_span2 {
+  display: block;
+  height: 100px;
+  width: 81px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  border: 1px solid #E8E8E8;
+  border-radius: 2px; }
+
+.services .services_ul .services_one .services_span2 i {
+  display: block;
+  height: 27px;
+  width: 31px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  position: relative;
+  top: 35px;
+  background-image: url(../../message/f1f2d4.png);
+  background-position: 0px -97px; }
+
+.services .services_ul .services_two .services_p1 {
+  font-size: 18px;
+  text-align: center; }
+
+.services .services_ul .services_two .services_p2 {
+  font-size: 14px;
+  position: absolute;
+  top: 60px; }
+
+.services .services_ul .services_three .services_p3 {
+  font-size: 18px;
+  text-align: center; }
+
+.services .services_ul .services_three .services_p4 {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  position: relative;
+  top: 30px;
+  background-image: url(../../message/erweima.png); }
+
+.services .services_ul .services_three .services_p5 {
+  font-size: 12px;
+  text-align: center;
+  color: #b4a078;
+  position: relative;
+  bottom: 0px;
+  top: 40px; }
+
+.services .services_ul .services_two .services_p6 {
+  line-height: 20px;
+  height: 55px;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  font-size: 18px;
+  display: inline-block; }
+
+.services .services_ul .services_two .services_p6 .services_p8 {
+  background-image: url(../../message/f1f2d4.png);
+  background-position: 0px -428px; }
+
+.services .services_ul .services_two .services_p6 .services_p9 {
+  background-image: url(../../message/f1f2d4.png);
+  background-position: 0px -325px; }
+
+.services .services_ul .services_two .services_p6 span {
+  display: inline-block;
+  height: 35px;
+  width: 33px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  vertical-align: -8px; }
+
+.services .services_ul .services_two .services_p6 .services_p7 {
+  background-image: url(../../message/f1f2d4.png);
+  background-position: 0px -469px; }

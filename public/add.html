@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>网易账号中心</title>
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+     <script src="lib/jquery.min.js"></script>
+ </head>
+ <body>
+   <header id="login_head">
+     <span>已有账号？去<a href="index.html">登录</a></span>
+   </header>
+   <div id="login_content">
+   <form action="http://127.0.0.1:8080/user/add" method="post">
+    <table width="1000px" cellspacing="0">
+    <tr>
+     <td>
+     <br>
+     <br>
+     </td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="button" value="普通账号注册" id="btn1"><input type="button" value="靓号注册" id="btn2">
+    </td>
+  </tr>
+   <tr>
+     <td>
+     <br>
+     <br>
+     </td>
+    </tr>
+  <tr>
+    <td>账号：</td>
+    <td><input type="text" name="uname" placeholder="网易邮箱/其他邮箱" id="u_name" onblur="v_uname()"></td>
+      <td class="table_ex" id="uname_msg"></td>
+  </tr>
+   <tr>
+     <td>
+     <br>
+     <br>
+     </td>
+    </tr>
+  <tr>
+    <td>密码：</td>
+    <td><input type="password" name="upwd" placeholder="6-16位密码，区分大小写" id="u_pwd" onblur="v_upwd()"></td>
+    <td class="table_ex" id="upwd_msg"></td>
+  </tr>
+   <tr>
+     <td>
+     <br>
+     <br>
+     </td>
+    </tr>
+  <tr>
+    <td>确认密码：</td>
+    <td><input type="password" placeholder="再次确认密码"></td>
+    <td class="table_ex"></td>
+  </tr>
+   <tr>
+     <td>
+     <br>
+     <br>
+     </td>
+    </tr>
+  <tr>
+      <td>验证码：</td>
+    <td><span class="t_security">Ac89</span></td>
+    <td>&nbsp;</td>
+  </tr>
+        <tr>
+            <td>
+                <br>
+                <br>
+            </td>
+        </tr>
+  <tr>
+    <td>手机号：</td>
+    <td><input type="tel" name="phone" placeholder="11位手机号" id="u_phones"></td>
+    <td class="table_ex"></td>
+  </tr>
+   <tr>
+     <td>
+     <br>
+     <br>
+     </td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>短信验证码：</td>
+    <td><input type="text" placeholder="输入短信验证码"></td>
+    <td class="table_ex"><input type="button" value="点击获取验证码" id="tab_btn" class="tab_tnb"/></td>
+  </tr>
+   <tr>
+     <td>
+     <br>
+     <br>
+     </td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="button" value="注&nbsp;册" id="logins" data-add="adds"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+   </form>
+    <a href="#" style="display:block;margin:0 auto;width:900px;height:100px">
+    <img src="message/appe.png" width="900" height="100" >
+    </a>
+   </div>
+ </body>
+ <script src="js/add/add.js"></script>
+</html>

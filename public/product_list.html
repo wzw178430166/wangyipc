@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="second_css/product_list/product_list.css">
+    <script src="lib/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+    </header>
+    <div class="nav_div">
+        <ul>
+            <li>首页</li>
+            <li>></li>
+            <li>运动旅行</li>
+        </ul>
+    </div>
+     <!-- 轮播图-->
+     <div id="content">
+            <ul id="ul-imgs">
+                <li v-for='(elem,i) of picsa' :key="i"><a href="#"><img :src="elem.img" alt=""></a></li>
+                <li><a href="#"><img :src="picsa[0].img" alt=""></a></li>
+                <!-- 
+                <li><a href="#"><img src="./message/product_list1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./message/product_list2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./message/product_list3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./message/product_list4.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./message/product_list2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./message/product_list3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./message/product_list1.jpg" alt=""></a></li> -->
+            </ul>
+            <div class="arrow_left" id="btn-left"></div>
+            <div class="arrow_right" id="btn-right"></div>
+            <ul class="round" id="ul-idxs">
+                <li v-for='(elem,i) of picsa' :key="i"></li>
+               
+            </ul>
+        </div>
+        <!-- 结束轮播图 -->
+
+         <!-- 二级产品列表 -->
+        <div class="nav_lists">
+            <ul class="nav-headers">
+                <li><span>分类：</span>
+                    <div class="nav_daohans">
+                        <a href="#" class="nav_active">全部</a>
+                    <a href="#">618爆款美食</a>
+                    <a href="#">新品首发</a>
+                    <a href="#">夏季推荐</a>
+                    <a href="#"> 好味精选</a>
+                    <a href="#">饼干糕点</a>
+                    <a href="#">小食糖巧</a>
+                    <a href="#">肉类零食</a>
+                    <a href="#">坚果炒货</a>
+                    <a href="#">蜜饯果干</a>
+                    <a href="#"> 冲调饮品</a>
+                    <a href="#">传统茗茶</a>
+                    <a href="#">茗茶礼盒</a>
+                    <a href="#">茶包花茶</a>
+                    <a href="#">滋补食材</a>
+                    <a href="#">保健品</a>
+                    <a href="#">酒类</a>
+                    <a href="#">乳品饮料</a>
+                    <a href="#">方便食品</a>
+                    <a href="#">米面粮油</a>
+                    <a href="#">南北干货</a>
+                    <a href="#">调味酱</a>
+                    <a href="#">菜果鲜肉</a>
+                    <a href="#">蛋网易</a>
+                    <a href="#"> 黑猪</a>
+                    <a href="#">海外美食</a>
+                   </div>
+            </li>
+            <li><span>配送地区：</span>
+                <div class="nav_daohans">
+                <a href="#" class="nav_active">全部</a>
+                <a href="#">香港</a>
+                <a href="#">澳门</a>
+                <a href="#">美洲</a>
+               </div>
+        </li>
+        <li><span>排序：</span>
+            <div class="nav_daohans">
+                <a href="#" class="nav_active">默认</a>
+            <a href="#">价格</a>
+            <a href="#"> 上架时间</a>
+           </div>
+    </li>
+            </ul>
+
+                    <!-- 第一个产品列表 -->
+      <div class="product-list" id="summer">
+        <h1 class="prList_h" v-text="productList[0].title"></h1>
+        <p class="prList_p" v-text="productList[0].details"></p>
+        <!-- 产品列表 -->
+        <div class="prList_div">
+          <div v-for="(elem,i) of productList" :key="i">
+              <p><a :href="elem.href"><img :src="elem.pic" alt=""></a></p>
+              <p><span v-text="elem.log_t" v-if="elem.log_t!=null"></span></p>
+               <p><a :href="elem.href">{{elem.product_title}}</a></p>
+               <p><span v-text="`￥${elem.price}`"></span><s>￥{{elem.original}}</s></p>
+               <p v-text="elem.product_msg"></p>
+          </div>  
+          <!-- <div>
+            <p><a href="#"><img src="./message/nav1/nav1_p1.png" alt=""></a></p>
+            <p><span>7月画册特惠</span></p>
+             <p><a href="#">男式运动弹力T桖</a></p>
+             <p><span>￥69.5</span><s>￥79</s></p>
+             <p>舒适透气，弹力拉伸</p>
+        </div>
+        <div>
+            <p><a href="#"><img src="./message/nav1/nav1_p1.png" alt=""></a></p>
+            <p><span>7月画册特惠</span></p>
+             <p><a href="#">男式运动弹力T桖</a></p>
+             <p><span>￥69.5</span><s>￥79</s></p>
+             <p>舒适透气，弹力拉伸</p>
+        </div>  
+        <div>
+            <p><a href="#"><img src="./message/nav1/nav1_p1.png" alt=""></a></p>
+            <p><span>7月画册特惠</span></p>
+             <p><a href="#">男式运动弹力T桖</a></p>
+             <p><span>￥69.5</span><s>￥79</s></p>
+             <p>舒适透气，弹力拉伸</p>
+        </div>   
+        <div>
+            <p><a href="#"><img src="./message/nav1/nav1_p1.png" alt=""></a></p>
+            <p><span>7月画册特惠</span></p>
+             <p><a href="#">男式运动弹力T桖</a></p>
+             <p><span>￥69.5</span><s>￥79</s></p>
+             <p>舒适透气，弹力拉伸</p>
+        </div>     
+        </div> -->
+    </div>
+
+
+        <!-- 第二个产品列 -->
+        <div class="product-list">
+                <h1 class="prList_h">主题床品</h1>
+                <p class="prList_p">设计点亮，品质当道</p>
+                <!-- 产品列表 -->
+                <div class="prList_div">
+                  <div>
+                      <p><a href="#"><img src="./message/nav1/nav1_p1.png" alt=""></a></p>
+                      <p><span>7月画册特惠</span></p>
+                       <p><a href="#">男式运动弹力T桖</a></p>
+                       <p><span>￥69.5</span><s>￥79</s></p>
+                       <p>舒适透气，弹力拉伸</p>
+                  </div>  
+                  <div>
+                    <p><a href="#"><img src="./message/nav1/nav1_p1.png" alt=""></a></p>
+                    <p><span>7月画册特惠</span></p>
+                     <p><a href="#">男式运动弹力T桖</a></p>
+                     <p><span>￥69.5</span><s>￥79</s></p>
+                     <p>舒适透气，弹力拉伸</p>
+                </div>
+                <div>
+                    <p><a href="#"><img src="./message/nav1/nav1_p1.png" alt=""></a></p>
+                    <p><span>7月画册特惠</span></p>
+                     <p><a href="#">男式运动弹力T桖</a></p>
+                     <p><span>￥69.5</span><s>￥79</s></p>
+                     <p>舒适透气，弹力拉伸</p>
+                </div>  
+                <div>
+                    <p><a href="#"><img src="./message/nav1/nav1_p1.png" alt=""></a></p>
+                    <p><span>7月画册特惠</span></p>
+                     <p><a href="#">男式运动弹力T桖</a></p>
+                     <p><span>￥69.5</span><s>￥79</s></p>
+                     <p>舒适透气，弹力拉伸</p>
+                </div>   
+                <div>
+                    <p><a href="#"><img src="./message/nav1/nav1_p1.png" alt=""></a></p>
+                    <p><span>7月画册特惠</span></p>
+                     <p><a href="#">男式运动弹力T桖</a></p>
+                     <p><span>￥69.5</span><s>￥79</s></p>
+                     <p>舒适透气，弹力拉伸</p>
+                </div>     
+                </div>
+            </div>
+    </div>
+    </div>
+    
+     <footer></footer>
+</body>
+<script src="lib/vue.js"></script>
+<script src="js/product_list/product_list.js"></script>
+</html>
