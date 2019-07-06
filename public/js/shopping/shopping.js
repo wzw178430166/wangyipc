@@ -2,7 +2,7 @@
  
  //请求头部文件
  $.ajax({
-    url:"../../header.html",  //当前客户端向这个地址的服务器发送请求
+    url:"./header.html",  //当前客户端向这个地址的服务器发送请求
     type:"get",//请求类型
     success: function(result){
        // console.log(result);
@@ -14,7 +14,7 @@
 
 //请求脚部文件
 $.ajax({
-    url:"../../footer.html",  //当前客户端向这个地址的服务器发送请求
+    url:"./footer.html",  //当前客户端向这个地址的服务器发送请求
     type:"get",//请求类型
     success: function(result){
        // console.log(result);
