@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../lib/jquery.min.js"></script>
+    <style>
+     ul{height: 400px;margin:0 auto;}
+     li{width:100px;margin:20px 0;background: red;}
+    </style>
+</head>
+<body>
+
+       <ul>
+           <li>1</li>
+           <li>2</li>
+           <li>3</li>
+           <li>4</li>
+       </ul>
+        <script>
+                var ul=document.getElementsByTagName('ul')[0];
+                var li=document.getElementsByTagName('li');
+                /*闭包*/
+                // for(var i=0;i<li.length;i++){
+                //     li[i].index=i;
+                //     li[i].onclick=function(){
+                //         console.log(this.index);
+                //     }
+                // }
+         
+            //  for(let i=0;i<li.length;i++){
+            //     li[i].onclick=function(){
+            //         console.log(i);
+            //     }
+            //  }
+
+
+
+            // var li=$('ul').children();
+            // for(var i=0;i<li.length;i++){
+            //     $(this).click(function(){
+                
+            // })
+            // }
+            
+          //获取当前点击的每一个li 闭包 
+            ul.onclick=function(e){
+                if(e.target.nodeName=="LI"){
+                    alert(e.target.innerText);
+                }
+            }
+          //1.查找绑定的元素
+           for(let i=0;i<li.length;i++){  //let 相当是块级作用域，在创建了一个立即函数自调
+               li[i].onclick=function(){
+                   console.log(i);
+               }
+           }
+          //2.绑定事件，
+                                   
+             //3.查找要修改的元素
+             //查看是否拿到对应下标元素  
+     //4.修改元
+          //立即执行完销毁，但是 n 始终引用着外面的i 所以保存在内存里面
+         /* 
+                for(var i=0;i<li.length;i++){
+                  
+                    (function(){
+                        var n=i;  //立即执行完销毁，但是 n 始终引用着外面的i 所以保存在内存里面
+                  li[n].onclick=function(){
+                         console.log(n);
+                     }
+                    }())
+                }
+*/
+            </script>
+</body>
+</html>
