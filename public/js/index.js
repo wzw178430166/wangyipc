@@ -18,7 +18,7 @@
 				  console.log(result);
 				  if(result=="1"){
 				  alert('登录成功');
-					  location.href="/personal.html";
+					  location.href="./personal.html";
 				  }else{
 					  alert('密码错误');
 				  }

@@ -65,7 +65,7 @@
                            if(result=="1"){
                                alert('注册成功');
                                //注册完跳转禁止后退
-                                location.replace("/index.html");
+                                location.replace("./index.html");
                            }else{
                                alert('注册失败请再次操作');
                            }
